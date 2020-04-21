@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <meta charset="UTF-8"> 
+   <title>Tim Berners Lee</title>
+   <link rel="stylesheet" href="styles.css">
+   <style>
+    body {
+    text-align:center;
+    background-color: #eee;
+    font-family: Segoe UI, Bold, Segoe UI;
+    }
+    #nav-bar {
+    top: 0; 
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height:2rem;
+    padding-bottom: 10rem;
+   }
+  nav ul {
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  @media (min-height: 800px) {
+  	body {
+  		background-color: white;
+  	}
+  }
+  #survey-form {
+  	display:flex;
+  	flex-direction: column;
+  }
+  #submit {
+  	width: 10vw;
+  	align-self: center;
+  	border-radius: 20px;
+  	background-color: white;
+  	margin-top: 1rem;
+  }
+  #header-img {
+  	border-radius: 20px;
+  	 max-width: 100%;
+     height: auto;
+  }
+   </style>
+ </head>
+ <body>
+  <header id = "header"> 
+  	 <nav id="nav-bar">
+      <ul>
+        <li><a href="#header-img" class = "nav-link">Image in header</a></li>
+        <li><a href="#video" class = "nav-link">Video</a></li>
+        <li><a href="#email-label" class = "nav-link">Subscription</a></li>
+      </ul>
+    </nav>
+     <figure>
+           <img id = "header-img" src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/images/full_menu_2col.jpg?$Publication_Two_Column_Desktop$" alt="Photo of Camper Cat executing a roundhouse kick">
+            <br>
+          <figcaption>
+            McCafe
+          </figcaption>
+         </figure>
+  </header>
+ 	<main id = "main">
+ 		<section>
+ 		   <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/Kra1eWAiKvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 		 <form id ="form" action="https://www.freecodecamp.com/email-submit">
+ 		 	<label id ="email-label">Please write your email: <input name = "email" id = "email" type = "email" required placeholder="Email" oninvalid="Please write valid email" /></label>
+ 		 	<input type="submit" id="submit" placeholder="Submit">
+         </form>
+ 	   </section>
+ 	</main>
+ </body>
+</html>

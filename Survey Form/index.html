@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <meta charset="UTF-8"> 
+   <title>Tim Berners Lee</title>
+   <style>
+    body {
+    text-align:center;
+    background-color: #eee;
+    font-family: Segoe UI, Bold, Segoe UI;
+    }
+    input {
+      margin-left: 0.5vw;
+      margin-bottom: 0.5vh;
+    }
+    #tribute-info {
+      width:90vw;
+      height:auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   </style>
+ </head>
+ <body>
+  <header> 
+    <h1 id = "title"> Survey Form</h1>
+  </header>
+ 	<main id = "main">
+ 		 <section id = "tribute-info">
+        <p id = "description"> A Survey form for the project</p>
+          <form id ="survey-form" action="/submit-survey">
+           <label id ="name-label"> Please write your name:<input id = "name" type = "text" required placeholder="Name" /></label>
+            <br/>
+            <label id ="email-label">Please write your email:<input id = "email" type = "email" required placeholder="Email" oninvalid="Please write valid email" /></label>
+             <br/>
+             <label id ="email-label">Please write a number<input id = "number" type = "number" required placeholder="Email" oninvalid="Please write valid number" min ="0" max = "13" /></label>
+             <br/>
+                <label id ="number-label">Please choose a car:
+                <select id="dropdown">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                </label>
+                <br/>
+               <label for="indoor"> 
+                 <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor 
+                 </label>
+              <label for="outdoor"> 
+                 <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor 
+                 </label>
+                 <br/>
+                  <label for="Cat"><input id="Cat" value="Cat" type="checkbox" name="animal"> Cat</label>
+                  <label for="Dog"><input id="Dog" value="Dog" type="checkbox" name="animal"> Dog</label>
+                  <label for="Hamster"><input id="Hamster" value="Hamster" type="checkbox" name="animal"> Hamster</label>
+                <br/>
+                <textarea name="comment">Any comments?</textarea>
+                <button type="submit" id="submit">Submit</button>
+          </form>
+ 	   </section>
+ 	</main>
+ </body>
+</html>
